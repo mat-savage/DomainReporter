@@ -1,0 +1,33 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>DomainReporter</Name>
+    <AddInID>{3d48d26e-e834-49fa-93b5-2bea6626cd88}</AddInID>
+      <Description>Domain Reporting Tool for ArcMap</Description>
+        <Version>0.2</Version>
+          <Image />
+            <Author>savagemat</Author>
+              <Company />
+                <Date>12/21/2018</Date>
+                  <Targets><Target name="Desktop" version="10.1" /></Targets>
+                    <AddIn language="PYTHON" library="DomainReporter_addin.py" namespace="DomainReporter_addin">
+                      <ArcMap>
+    <Commands>
+        <ComboBox caption="Layer" category="DomainReporter" class="cboLayers" id="DomainReporter_addin.combobox" itemSizeString="WWWWWW" message="Layer to get domain values from" rows="4" sizeString="WWWWWW" tip="Layer"><Help heading="" /></ComboBox>
+        <ComboBox caption="Subtype" category="DomainReporter" class="cboSubtypes" id="DomainReporter_addin.combobox_2" itemSizeString="WWWWWW" message="Subtype to get domain values from" rows="4" sizeString="WWWWWW" tip="Subtype"><Help heading="" /></ComboBox>
+        <ComboBox caption="Field" category="DomainReporter" class="cboFieldsWithDomains" id="DomainReporter_addin.combobox_1" itemSizeString="WWWWWW" message="Field to show domains from" rows="4" sizeString="WWWWWW" tip="Field"><Help heading="" /></ComboBox>
+        <Button caption="Show Domain Values" category="DomainReporter" class="btnShowDomains" id="DomainReporter_addin.button" image="" message="Show domain values" tip="Show Domains"><Help heading="" /></Button>
+        </Commands>
+    <Extensions>
+        <Extension autoLoad="true" category="DomainReporter" class="extDomainReporter" description="" id="DomainReporter_addin.extension" name="Domain Reporter Extension" productName="Domain Reporter Extension" showInExtensionDialog="false" />
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="Domain Reporter Tools" category="DomainReporter" id="DomainReporter_addin.toolbar" showInitially="true">
+          <Items>
+            <ComboBox refID="DomainReporter_addin.combobox" />
+            <ComboBox refID="DomainReporter_addin.combobox_2" />
+            <ComboBox refID="DomainReporter_addin.combobox_1" />
+            <Button refID="DomainReporter_addin.button" />
+          </Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
